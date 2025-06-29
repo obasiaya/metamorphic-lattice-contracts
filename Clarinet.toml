@@ -1,0 +1,23 @@
+[project]
+name = "metamorphic-lattice-contracts"
+authors = []
+description = ""
+telemetry = true
+requirements = []
+cache_dir = "/home/runner/workspace/metamorphic-lattice-contracts/./.requirements"
+boot_contracts = ["pox", "costs-v2", "bns"]
+[contracts.metamorphic-lattice-contracts]
+path = "contracts/metamorphic-lattice-contracts.clar"
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
